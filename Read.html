@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title> DBNRS </title>
+</head>
+<body>
+
+<h1>Introduction</h1>
+<p>Software Fault Prediction (SFP) models trained on class-imbalanced and overlapped datasets are prone to producing unreliable prediction models. In imbalanced datasets, traditional supervised learning algorithms typically favor the majority class, which impairs minority class classification and worsens performance due to prevalent class overlap issues. Numerous resampling techniques target class imbalance but ignore class overlap. In addition, most of the existing methods for SFP cannot handle the variable density of data effectively. We propose a Density-based Neighborhood Recursive Search (DBNRS) method to fill these gaps. The proposed method uses data densities of the minority classes to filter out excessively dense data from the majority instances in overlapping regions. The data densities are determined based on the neighborhood radius and the minimum number of neighbors within that radius, followed by the use of a neighborhood-based recursive search algorithm to enhance minority class visibility by removing majority class instances from overlapping regions. We eliminate the common nearest neighbors of two minority instances and apply the same approach recursively to the eliminated common neighbors. Additionally, four machine learning techniques and two ensemble learning methods are used to build SFP models from the pre-processed fault datasets. Extensive comparative findings on 13 datasets reveal that the proposed method provides the highest AUC score (= 81.1%), the maximum Recall value (= 78.2%), and the highest G-mean value (= 79.3%) as compared to the cutting-edge techniques. The experimental results showed that the proposed method enhanced the performance of fault prediction and surpassed current cutting-edge techniques in tackling class imbalance and overlap. These findings have significant practical applications, offering improved fault prediction capabilities that can be directly utilized to enhance software quality and lower maintenance costs in real-world software development and quality assurance processes. </p> 
+
+
+
+<h1>Dataset Collection </h1>
+<p>For the experiment/analysis, dataset is collected from the open source <a href= "http://promise.site.uottawa.ca/SERepository/datasets-page.html"> PROMISE repository</a> which is publically available. </p>
+
+<h1>Proposed Method Implementation</h1>
+<p>
+<ol type="1">
+	<Li> Install Visual Studio code and python for implementation of the proposed method. </Li>
+	<Li> All the absolute paths of the program should be set according to the system used. </Li>
+	<Li> Install sklearn, numpy, imblearn and pandas libraries.</Li>
+	<Li> Import the DBNRS.py and Undersampling.py files and run.</Li>
+	<Li> Results are stored in results folder. </Li>
+</ol>
+</p>
+
+<h1>Softwares Required </h1>
+<p>
+<ol type="1">
+	<Li> Windows 11 operating system </Li>
+	<Li> For statistical purpose, <a href= "https://www.ibm.com/spss"> SPSS tool </a> by IBM is required </Li>
+</ol>
+</p>
+<h1> Hardware System Configuration </h1>
+<p>
+For the experimental analysis, we have used the following system configuration:
+Lenovo Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz 
+</p>
+</body>
+</html>
